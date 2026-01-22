@@ -1,2 +1,2 @@
 # AlphaFold3_output_analysis
-Sequence editing and Analysis of PDB files for LDLR receptors.
+Sequence editing and Analysis of PDB files for LDLR receptors. Still under construction!

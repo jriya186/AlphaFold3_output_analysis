@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "af3toolkit"
+version = "0.1.0"
+description = "Post-AlphaFold3 structural contact analysis for LDL-receptor-family / Reelin complexes."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Riya" }
+]
+dependencies = [
+    "biopython>=1.80",
+    "pandas>=1.5",
+]
+
+[project.optional-dependencies]
+cli-pretty = ["tabulate>=0.9"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+af3toolkit = "af3toolkit.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["af3toolkit*"]
